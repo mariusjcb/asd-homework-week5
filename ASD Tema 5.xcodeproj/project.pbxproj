@@ -23,8 +23,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7A133A331E1AD66B006AB537 /* QueueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueView.h; sourceTree = "<group>"; };
+		7A133A341E1AD6E7006AB537 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		7AB495491E1A985500405A28 /* StackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackView.h; sourceTree = "<group>"; };
+		7AB4954B1E1AB83300405A28 /* QueueModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueModel.h; sourceTree = "<group>"; };
 		7AF094721E1A779200D548BD /* ASD Tema 5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ASD Tema 5"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF094751E1A779200D548BD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		7AF0947C1E1A7BC900D548BD /* StackModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackModel.h; sourceTree = "<group>"; };
+		7AF094861E1A87FD00D548BD /* OptionalType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OptionalType.h; sourceTree = "<group>"; };
+		7AF094871E1A886B00D548BD /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AB4954A1E1AB7F600405A28 /* Queue  */ = {
+			isa = PBXGroup;
+			children = (
+				7AB4954B1E1AB83300405A28 /* QueueModel.h */,
+				7A133A331E1AD66B006AB537 /* QueueView.h */,
+				7A133A341E1AD6E7006AB537 /* Queue.h */,
+			);
+			name = "Queue ";
+			sourceTree = "<group>";
+		};
 		7AF094691E1A779200D548BD = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +75,29 @@
 			isa = PBXGroup;
 			children = (
 				7AF094751E1A779200D548BD /* main.cpp */,
+				7AF094851E1A847200D548BD /* Modules */,
 			);
 			path = "ASD Tema 5";
+			sourceTree = "<group>";
+		};
+		7AF0947D1E1A7BCF00D548BD /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				7AF0947C1E1A7BC900D548BD /* StackModel.h */,
+				7AB495491E1A985500405A28 /* StackView.h */,
+				7AF094871E1A886B00D548BD /* Stack.h */,
+			);
+			name = Stack;
+			sourceTree = "<group>";
+		};
+		7AF094851E1A847200D548BD /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7AF094861E1A87FD00D548BD /* OptionalType.h */,
+				7AB4954A1E1AB7F600405A28 /* Queue  */,
+				7AF0947D1E1A7BCF00D548BD /* Stack */,
+			);
+			name = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,6 +287,7 @@
 				7AF0947B1E1A779200D548BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
