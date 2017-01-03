@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7AF094761E1A779200D548BD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AF094751E1A779200D548BD /* main.cpp */; };
+		7A133A451E1B23F3006AB537 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7AF094751E1A779200D548BD /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +25,9 @@
 /* Begin PBXFileReference section */
 		7A133A331E1AD66B006AB537 /* QueueView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueView.h; sourceTree = "<group>"; };
 		7A133A341E1AD6E7006AB537 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		7A133A351E1B0009006AB537 /* suplimentar2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = suplimentar2.cpp; sourceTree = "<group>"; };
+		7A133A381E1B0620006AB537 /* sup1&2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sup1&2.h"; sourceTree = "<group>"; };
+		7A133A3A1E1B0B4D006AB537 /* suplimentar1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = suplimentar1.cpp; sourceTree = "<group>"; };
 		7AB495491E1A985500405A28 /* StackView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackView.h; sourceTree = "<group>"; };
 		7AB4954B1E1AB83300405A28 /* QueueModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueModel.h; sourceTree = "<group>"; };
 		7AF094721E1A779200D548BD /* ASD Tema 5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "ASD Tema 5"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +48,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A133A391E1B07B0006AB537 /* Supllimentar 1 & 2 */ = {
+			isa = PBXGroup;
+			children = (
+				7A133A3A1E1B0B4D006AB537 /* suplimentar1.cpp */,
+				7A133A351E1B0009006AB537 /* suplimentar2.cpp */,
+				7A133A381E1B0620006AB537 /* sup1&2.h */,
+			);
+			name = "Supllimentar 1 & 2";
+			sourceTree = "<group>";
+		};
 		7AB4954A1E1AB7F600405A28 /* Queue  */ = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				7AF094751E1A779200D548BD /* main.cpp */,
+				7A133A391E1B07B0006AB537 /* Supllimentar 1 & 2 */,
 				7AF094851E1A847200D548BD /* Modules */,
 			);
 			path = "ASD Tema 5";
@@ -158,7 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AF094761E1A779200D548BD /* main.cpp in Sources */,
+				7A133A451E1B23F3006AB537 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

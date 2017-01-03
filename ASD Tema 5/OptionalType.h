@@ -10,6 +10,7 @@
 #define OptionalType_h
 
 #include <limits>
+double nan = std::numeric_limits<double>::quiet_NaN();
 
 template <class T>
 class Optional {
@@ -18,6 +19,7 @@ private:
     bool objIsNull = true;
     
 public:
+    
     Optional(T value) {
         setValue(value);
     }

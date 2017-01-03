@@ -29,15 +29,15 @@ public:
     }
     
     void push(T value) {
-        return Items->push(value);
+        Items->push(value);
     }
     
-    Optional<T> pop() {
-        return Items->pop(showErrorClosure);
+    Optional<T> pop(function<void (string)> eventClosure = showErrorClosure) {
+        return Items->pop(eventClosure);
     }
     
-    Optional<T> peek() {
-        return Items->peek(showErrorClosure);
+    Optional<T> peek(function<void (string)> eventClosure = showErrorClosure) {
+        return Items->peek(eventClosure);
     }
     
     bool empty() {

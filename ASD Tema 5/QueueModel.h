@@ -18,13 +18,13 @@ public:
         StackModel<T>();
     }
     
-    Optional<T> pop(void(*errorClosure)(string)) override {
+    Optional<T> pop(function<void (string)> eventClosure) override {
         Optional<T> optionalValue;
         typename StackModel<T>::StackNode *nextBottom;
         
         if (this->isEmpty())
         {
-            errorClosure("COADA ESTE GOALA");
+            eventClosure("COADA ESTE GOALA");
         }
         else
         {
@@ -43,11 +43,11 @@ public:
         return optionalValue;
     }
     
-    Optional<T> peek(void(*errorClosure)(string)) override {
+    Optional<T> peek(function<void (string)> eventClosure) override {
         Optional<T> optionalValue;
         
         if(this->isEmpty()) {
-            errorClosure("COADA ESTE GOALA");
+            eventClosure("COADA ESTE GOALA");
         } else {
             optionalValue = this->bottom->value;
         }

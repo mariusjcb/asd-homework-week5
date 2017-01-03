@@ -128,13 +128,13 @@ public:
         }
     }
     
-    virtual Optional<T> pop(void(*errorClosure)(string)) {
+    virtual Optional<T> pop(function<void (string)> eventClosure) {
         StackNode *nextTop;
         Optional<T> optionalValue;
         
         if (isEmpty())
         {
-            errorClosure("STIVA ESTE GOALA");
+            eventClosure("STIVA ESTE GOALA");
         }
         else
         {
@@ -148,11 +148,11 @@ public:
         return optionalValue;
     }
     
-    virtual Optional<T> peek(void(*errorClosure)(string)) {
+    virtual Optional<T> peek(function<void (string)> eventClosure) {
         Optional<T> optionalValue;
         
         if(isEmpty()) {
-            errorClosure("STIVA ESTE GOALA");
+            eventClosure("STIVA ESTE GOALA");
         } else {
             optionalValue = top->value;
         }
