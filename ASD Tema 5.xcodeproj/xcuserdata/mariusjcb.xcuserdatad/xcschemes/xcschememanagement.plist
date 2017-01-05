@@ -9,9 +9,19 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>StackQueue.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>7A5A7E901E1EC4E900557413</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7AF094711E1A779200D548BD</key>
 		<dict>
 			<key>primary</key>

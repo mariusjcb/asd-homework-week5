@@ -23,7 +23,9 @@ int main(int argc, const char * argv[]) {
     coada.push(74);
     
     coada.afiseaza();
+    
     while(coada.pop().isSet());
+    cout << "\n\n";
     
     
 #pragma mark: - STIVA
@@ -34,10 +36,10 @@ int main(int argc, const char * argv[]) {
     stiva.push(2.1);
     stiva.push(3);
     stiva.push(3.7);
-    stiva.push(382);
+    stiva.push(7);
     
     stiva.afiseaza();
-    cout << stiva.pop().getValue();
+    
     while(coada.pop().isSet());
     cout << "\n\n";
     
